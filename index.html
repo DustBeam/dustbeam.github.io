@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC TCG Rules</title>
+    <style>
+        @font-face {
+            font-family: 'TypeLightSans';
+            src: url('TypeLightSans.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'TypeLightSans', sans-serif;
+            background-color: #bcffbb;
+			font-size: 18px;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            background: #fffebb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2f402f;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+		.credits {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FRC Trading Card Game Rules</h1>
+        
+        <div class="section">
+            <h2>Card Types</h2>
+            <ul>
+                <li><strong>Common:</strong> Buff <strong>Uncommon</strong> cards. Buffs return to the player’s hand when the affected card is destroyed.</li>
+                <li><strong>Uncommon:</strong> Can <strong>attack</strong> on your turn and <strong>defend</strong> on the opponent’s turn.</li>
+                <li><strong>Rare:</strong> Provide special effects or buffs. Must be <strong>played face down first</strong>, then flipped to activate.</li>
+                <li><strong>Unique:</strong> Can act as any of the above but must also be <strong>played face down first</strong>, then flipped.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Setup</h2>
+            <ol>
+                <li>(Optional) Gather two types of small counters (e.g., nuts and bolts) to track attack and health.</li>
+                <li>Each player selects <strong>10 cards</strong> to use for the entire game. This is their hand and deck.</li>
+                <li>Each player places <strong>1 Uncommon card face down</strong> on the field.</li>
+                <li>Once both players have placed their card, they flip it over simultaneously.</li>
+                <li>Determine which player goes first.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Gameplay</h2>
+            <ul>
+                <li>Each turn, a player gets <strong>2 actions</strong>.</li>
+                <li><strong>Actions include:</strong>
+                    <ul>
+                        <li>Flipping a Rare or Unique card.</li>
+                        <li>Attacking with a card.</li>
+                        <li>Playing a card.</li>
+                        <li>Using a buff card on another card.</li>
+                        <li>Discarding a card from the field.</li>
+                    </ul>
+                </li>
+                <li><strong>Attacking:</strong>
+                    <ul>
+                        <li>Choose an opponent’s card with health to attack.</li>
+                        <li>Subtract the attacker's attack value from the defender’s health.</li>
+                        <li>If the defender’s health reaches 0, it is discarded.</li>
+                        <li>If the opponent has no cards with health, you can attack them directly.</li>
+                        <li><strong>Excess damage does not carry over to the player.</strong></li>
+                    </ul>
+                </li>
+                <li><strong>Buff Mechanics:</strong>
+                    <ul>
+                        <li>Buffs from Common and Rare cards remain until the affected card is destroyed.</li>
+                        <li>When the buffed card is destroyed, the buff card returns to the player’s hand.</li>
+                    </ul>
+                </li>
+                <li><strong>Face-Down Rare & Unique Cards:</strong>
+                    <ul>
+                        <li>There is no limit to how many can be placed face down.</li>
+                        <li>They must be flipped to activate their effects.</li>
+                    </ul>
+                </li>
+                <li><strong>Running Out of Cards:</strong>
+                    <ul>
+                        <li>If a player runs out of cards in hand, they can still take actions.</li>
+                        <li>The discard pile is <strong>not</strong> recycled.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Winning & Losing</h2>
+            <ul>
+                <li>Each player starts with <strong>20 health</strong>.</li>
+                <li>If a player's health reaches <strong>0</strong>, they lose.</li>
+            </ul>
+        </div>
+		
+		<div class="section">
+            <h2>Other Edge Cases</h2>
+            <ul>
+                <li>As long as <strong>both players agree</strong>, handle anything not mentioned here however you want.</li>
+            </ul>
+        </div>
+		
+		<div class="section">
+            <h2>But most importantly...</h2>
+            <ul>
+                <li>Don't forget to <strong>have fun</strong>!</li>
+            </ul>
+        </div>
+		
+		<div class="credits">
+            <h3>Credits</h3>
+            <p>Game Design: Nivyarra Turrentine & Theo Devoy</p>
+            <p>Card Design: Nivyarra Turrentine</p>
+            <p>Counterfeits: ???</p>
+			<p>This website: ChatGPT & Nivyarra Turrentine</p>
+        </div>
+    </div>
+</body>
+</html>
